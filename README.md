@@ -5,5 +5,7 @@ For development tools, I used Fritzing for hardware concept, Solidworks for mech
 The main programming language was Python3 with RPi.GPIO, Numpy, Imutils, Flask, Open CV, and smtplib as Python libraries. I also used C++ for Arduino programming, Java Script, HTML, and CSS for the web application.
 
 Notice:
+
 For more information on the project, please consult the pfe-final.pdf file (the file is in French).
+
 This project is my own personal property, and thanks To Ammiral, Aste Engineering, Best Buy Tunisie, Sfzx Lazer, and TIM for sponsoring this project
