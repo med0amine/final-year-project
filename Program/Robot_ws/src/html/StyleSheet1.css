@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.video {
+    width: 1280px;
+    height: 532px;
+    object-fit: fill;
+    margin-top: 0px;
+    margin-left: 128px;
+    margin-bottom: 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+.top-img {
+    width: 1536px;
+    height: 130px;
+    background-image: url(https://i.postimg.cc/9f8jCz7D/photo1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.buttom-img {
+    width: 1536px;
+    height: 83px;
+    background-image: url(https://i.postimg.cc/k5Xd0WBr/photo2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.power-bt {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20%;
+}
+
+    .power-bt .power-off {
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+    }
+
+.servocontrol {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    top: 30%;
+}
+
+    .servocontrol .title1 {
+        font-size: 30px;
+        font-family: 'Times New Roman';
+        text-align: center;
+    }
+
+    .servocontrol .up-servo {
+        height: 60px;
+        width: 60px;
+        margin-top: 10px;
+        margin-left: 90px;
+        cursor: pointer;
+    }
+
+    .servocontrol .left-servo {
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .servocontrol .right-servo {
+        height: 60px;
+        width: 60px;
+        margin-left: 80px;
+        cursor: pointer;
+    }
+
+    .servocontrol .down-servo {
+        height: 60px;
+        width: 60px;
+        margin-left: 90px;
+        cursor: pointer;
+    }
+
+.motorcontrol {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    margin-left: 1286px;
+    top: 30%;
+}
+
+    .motorcontrol .title2 {
+        font-size: 30px;
+        font-family: 'Times New Roman';
+        text-align: center;
+    }
+
+    .motorcontrol .forward-motor {
+        height: 60px;
+        width: 60px;
+        margin-top: 10px;
+        margin-left: 90px;
+        cursor: pointer;
+    }
+
+    .motorcontrol .left-motor {
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .motorcontrol .right-motor {
+        height: 60px;
+        width: 60px;
+        margin-left: 80px;
+        cursor: pointer;
+    }
+
+    .motorcontrol .backward-motor {
+        height: 60px;
+        width: 60px;
+        margin-left: 90px;
+        cursor: pointer;
+    }
+
+.navigation {
+    height: 120px;
+    width: 250px;
+    position: absolute;
+    margin-left: 1286px;
+    top: 64%;
+}
+
+    .navigation .title3 {
+        font-size: 28px;
+        font-family: 'Times New Roman';
+        text-align: center;
+    }
+
+    .navigation .container {
+        margin-left: 120px;
+        margin-top: 40px;
+        transform: translate(-50%,-50%);
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .navigation .container .toggle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90px;
+            height: 50px;
+            background: #444;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+            .navigation .container .toggle .toggle-button {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 40px;
+                height: 40px;
+                background: rgb(255, 255, 255);
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+    .navigation .countainer .toggle.active {
+        background: #6495ed;
+    }
+
+    .navigation .container .toggle.active .toggle-button {
+        left: 45px;
+    }
+
+    .navigation .container .text {
+        position: absolute;
+        left: 95px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+    }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <link rel="stylesheet"  type="text/css" href="StyleSheet1.css"/>
+    <title>S-Livid</title>
+
+</head>
+<body>
+    <div class="top-img"></div>
+    <div class="video">
+        <img id="bg" src="{{ url_for('video_feed') }}" />
+    </div>
+    <div class="power-bt">
+        <img id="poweroff" class="power-off" src="https://svgshare.com/i/iVD.svg" />
+    </div>
+    <div class="servocontrol">
+        <h2 class="title1">Control Servo</h2>
+        <img href="#" id="upservo" class="up-servo" src="https://svgshare.com/i/iSN.svg" /><br />
+        <img href="#" id="leftservo" class="left-servo" src="https://svgshare.com/i/iS2.svg" />
+        <img href="#" id="rightservo" class="right-servo" src="https://svgshare.com/i/iTD.svg" /><br />
+        <img href="#" id="downservo" class="down-servo" src="https://svgshare.com/i/iRu.svg" />
+    </div>
+    <div class="motorcontrol">
+        <h2 class="title2">Control Motor</h2>
+        <img href="#" id="forwardmotor" class="forward-motor" src="https://svgshare.com/i/iSN.svg" /><br />
+        <img href="#" id="leftmotor" class="left-motor" src="https://svgshare.com/i/iS2.svg" />
+        <img href="#" id="rightmotor" class="right-motor" src="https://svgshare.com/i/iTD.svg" /><br />
+        <img href="#" id="backwardmotor" class="backward-motor" src="https://svgshare.com/i/iRu.svg" />
+    </div>
+    <div class="navigation">
+        <h3 class="title3">Autonome Navigation</h3>
+        <div class="container">
+            <div class="toggle">
+                <div class="toggle-button" onclick="Animatedtoggle()"></div>
+            </div>
+            <div class="text">OFF</div>
+        </div>
+    </div>
+    <div class="buttom-img"></div>
+
+    <script>
+        let toggle = document.querySelector(".toggle");
+        let text = document.querySelector(".text");
+
+        function Animatedtoggle() {
+            toggle.classList.toggle("active");
+
+            if (toggle.classList.contains("active")) {
+                text.innerHTML = "ON";
+                toggle.style.backgroundColor = "#6495ed";
+            }
+            else {
+                text.innerHTML = "OFF"
+                toggle.style.backgroundColor = "#444";
+            }
+        }
+        $(document).ready(function () {
+            $("#poweroff").on("mousedown", function () {
+                $.get('/poweroff')
+            });
+            $(".toggle").click(function () {
+                if (toggle.classList.contains("active")) {
+                    $.get('/autonome_navigation');
+                }
+                else {
+                    $.get('/manual_navigation');
+                }
+            });
+            $("#forwardmotor").on("mousedown", function () {
+                $.get('/upside');
+            }).on('mouseup', function () {
+                $.get('/stop');
+            });
+            $("#leftmotor").on("mousedown", function () {
+                $.get('/right_side');
+            }).on('mouseup', function () {
+                $.get('/stop');
+            });
+            $("#rightmotor").on("mousedown", function () {
+                $.get('/right_side');
+            }).on('mouseup', function () {
+                $.get('/stop');
+            });
+            $("#backwardmotor").on("mousedown", function () {
+                $.get('/down_side');
+            }).on('mouseup', function () {
+                $.get('/stop');
+            });
+            $("#upservo").on("mousedown", function () {
+                $.get('/s2u');
+            });
+            $("#downservo").on("mousedown", function () {
+                $.get('/s2d');
+            });
+            $("#leftservo").on("mousedown", function () {
+                $.get('/s1l');
+            });
+            $("#rightservo").on("mousedown", function () {
+                $.get('/s1r');
+            });
+        });
+    </script>
+</body>
+</html>
