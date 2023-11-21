@@ -4,7 +4,7 @@ I tried to make the autonomous surveillance robot as efficient as possible, to r
 
 For the hardware, I used Raspberry Pi 4, Arduino Uno, Rpi Camera 2, 3 ultrasonic sensors, 2 servo motors, a buzzer, 4 motors with H-bridge, 2 batteries, an LDR sensor, and LEDs.
 
-For development tools, I used Fritzing for hardware concept, Solidworks for mechanical design, Arduino IDE for development in Arduino, Ms Visual Studio, Putty, and VNC viewer for development in Raspberry.
+For development tools, I used Fritzing for hardware concept, Solidworks for mechanical design, Arduino IDE for development in Arduino, Ms Visual Studio, Putty, and VNC viewer for development in Raspberry with Ubunto Linux as an operating system.
 
 The main programming language was Python3 with RPi.GPIO, Numpy, Imutils, Flask, Open CV, and smtplib as Python libraries. I also used C++ for Arduino programming, Java Script, HTML, and CSS for the web application.
 
