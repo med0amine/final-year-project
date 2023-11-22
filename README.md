@@ -6,7 +6,7 @@ For the hardware, I used Raspberry Pi 4, Arduino Uno, Rpi Camera 2, 3 ultrasonic
 
 For development tools, I used Fritzing for hardware concept, Solidworks for mechanical design, Arduino IDE for development in Arduino, Ms Visual Studio, Putty, and VNC viewer for development in Raspberry with Ubunto Linux as an operating system.
 
-The main programming language was Python3 with RPi.GPIO, Numpy, Imutils, Flask, Open CV, and smtplib as Python libraries. I also used C++ for Arduino programming, Java Script, HTML, and CSS for the web application.
+The main programming language was Python3 with RPi.GPIO, Numpy, Imutils, Flask, Open CV, and smtplib as the main Python libraries. I also used C++ for Arduino programming, Java Script, HTML, and CSS for the web application.
 
 Notice:
 
