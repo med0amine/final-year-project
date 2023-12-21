@@ -12,4 +12,4 @@ Notice:
 
 For more information on the project, please consult the pfe-final.pdf file (the file is in French).
 
-This project is my own personal property, and thanks To Ammiral, Aste Engineering, Best Buy Tunisie, Sfzx Lazer, and TIM for sponsoring this project
+This project is my own personal property, and thanks To Ammiral, Aste Engineering, Best Buy Tunisie, Sfax Lazer, and TIM for sponsoring this project
